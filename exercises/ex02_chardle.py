@@ -29,11 +29,13 @@ def contains_char(word: str, letter: str) -> None:
     count: int = 0
     while len(word) > index:
         if letter == word[index]:
-            print(str(letter) + " found in index " + str(index))
             count += 1
+            print(str(letter) + " found at index " + str(index))
         index += 1
-    if count <= 0:
+    if count == 0:
         print("No instances of " + str(letter) + " found in " + str(word))
+    elif count == 1:
+        print(str(count) + " instance of " + str(letter) + " found in " + str(word))
     else:
         print(str(count) + " instances of " + str(letter) + " found in " + str(word))
 

@@ -12,6 +12,7 @@ def remove_chars(msg: str, char: str) -> str:
     return copy
 
 
-word: str = input("Enter word: ")
-char: str = input("Enter char: ")
-print(remove_chars(word, char))
+if __name__ == "__main__":
+    word: str = input("Enter word: ")
+    char: str = input("Enter char: ")
+    print(remove_chars(word, char))

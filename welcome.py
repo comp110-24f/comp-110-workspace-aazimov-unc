@@ -7,12 +7,5 @@ print("You are in for a fun adventure into programming!")
 print("<3 the COMP110 Team!")
 
 
-def view(my_list: list[str]):
-    idx: int = 0
-    while idx < len(my_list):
-        print(my_list[idx])
-        idx += 1
-
-
-msg: list[str] = ["Hello", "World"]
-view(msg)
+ice_cream = {"vanilla": 1, "chocolate": 2}
+print(ice_cream["pecan"])  # This will raise a KeyError

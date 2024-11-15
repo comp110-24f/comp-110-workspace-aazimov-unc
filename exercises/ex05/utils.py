@@ -43,7 +43,9 @@ def add_at_index(input_list: list[int], elem_add: int, index_add: int) -> None:
     input_list.append(0)
     # shifts elements to the right
     # from last index on input_list to index to add, working backwards
+
     for idx in range(len(input_list) - 1, index_add, -1):
         input_list[idx] = input_list[idx - 1]
+
     # new element is inserted at index
     input_list[index_add] = elem_add
